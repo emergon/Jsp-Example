@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/web/css/style.css</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/src/java/dao/SalesmanDao.java</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/web/Salesmen.jsp</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/web/META-INF/context.xml</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/src/java/entities/Salesman.java</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/src/java/services/SalesmanService.java</file>
+            <file>file:/home/anastasios/NetBeansProjects/JSPExamples/src/java/controllers/SalesmanServlet.java</file>
+        </group>
+    </open-files>
+</project-private>

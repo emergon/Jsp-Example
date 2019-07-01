@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <form action="registrationResponse.jsp">
+            <h4>Registration form</h4>
+            Username&nbsp;<input type="text" name="username">
+            <br/><br/>
+            Password&nbsp;<input type="password" name="password">
+            <br/><br/>
+            Role&nbsp;<select name="role">
+                <option>Admin</option>
+                <option>User</option>
+            </select><br/>
+            <br/><br/>
+            Favorite Language
+            <br/>
+            <input type="radio" name="language" value="Java">Java
+            <input type="radio" name="language" value="PHP">PHP
+            <input type="radio" name="language" value="C#">C#
+            <br/><br/>
+            Sports<br/>
+            <input type="checkbox" name="sport" value="Soccer">Soccer
+            <input type="checkbox" name="sport" value="Volley">Volley
+            <input type="checkbox" name="sport" value="BasketBall">BasketBall
+            <br/>
+            <input type="submit" value="Submit">
+            <br/><br/>
+
+        </form>
+
+        <form action="i18n_test.jsp">
+            First Name:<input type="text" name="firstName">
+            <br/><br/>
+            Last Name:<input type="text" name="lastName">
+            <br/><br/>
+            <input type="submit" value="I18N JSP"/>
+            
+        </form>
+    </body>
+</html>

@@ -47,7 +47,7 @@ public abstract class AbstractDao<T> implements Dao<T> {
 
     }
 
-    protected void closeResources(Statement st, ResultSet rs) {
+    protected void closeResources(Statement st, ResultSet rs, Connection conn) {
         try {
             if (st != null) {
                 st.close();
@@ -55,14 +55,6 @@ public abstract class AbstractDao<T> implements Dao<T> {
             if (rs != null) {
                 rs.close();
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(AbstractDao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-    }
-
-    protected void closeConnection(Connection conn) {
-        try {
             //Doesn't really close connection but returns it to the connection pool
             if (conn != null) {
                 conn.close();
@@ -70,6 +62,7 @@ public abstract class AbstractDao<T> implements Dao<T> {
         } catch (SQLException ex) {
             Logger.getLogger(AbstractDao.class.getName()).log(Level.SEVERE, null, ex);
         }
+
     }
 
 }

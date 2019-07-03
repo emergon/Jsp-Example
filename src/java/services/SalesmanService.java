@@ -25,6 +25,22 @@ public class SalesmanService {
         return getSdao().getAllSalesmen();
     }
     
+    public Salesman getSalesmanById(int scode){
+        return getSdao().find(scode);
+    }
+    
+    public boolean create(Salesman s){
+        return getSdao().create(s);
+    }
+    
+    public boolean update(Salesman s){
+        return getSdao().update(s);
+    }
+    
+    public boolean delete(int scode){
+        return getSdao().delete(scode);
+    }
+    
     private SalesmanDao getSdao(){
         if(sdao == null){
             sdao = new SalesmanDao();

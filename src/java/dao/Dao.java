@@ -17,7 +17,7 @@ public interface Dao<T> {
 
     boolean update(T t);
 
-    boolean delete(T t);
+    boolean delete(int id);
 
     T find(int id);
 

@@ -26,8 +26,8 @@
                 
                 <!--Add the button Add Salesman-->
                 <input type="button" value="Add Salesman" 
-                       onclick="window.location.href='addSalesmanForm.jsp';return false;
-                       class='add-button'"/>
+                       onclick="window.location.href='salesman/addSalesmanForm.jsp';return false;"
+                       class="add-button"/>
                 
                 <table>
                     <tr>
@@ -35,13 +35,27 @@
                         <th>Name</th>
                         <th>City</th>
                         <th>Commission</th>
+                        <th>Action</th>
                     </tr>
                     <c:forEach items="${salesmen}" var="salesman">
+                        <!--Set up an update link for each salesman-->
+                        <c:url var="update" value="Salesman">
+                            <c:param name="command" value="LOAD"/>
+                            <c:param name="id" value="${salesman.scode}"/>
+                        </c:url>
+                        <c:url var="delete" value="Salesman">
+                            <c:param name="command" value="REMOVE"/>
+                            <c:param name="id" value="${salesman.scode}"/>
+                        </c:url>
                         <tr>
                             <td>${salesman.scode}</td>
                             <td>${salesman.sname}</td>
                             <td>${salesman.scity}</td>
                             <td>${salesman.scomm}</td>
+                            <td>
+                                <a href="${update}">Update</a> |
+                                <a href="${delete}" onclick=" if (!(confirm('Are you sure you want to delete this salesman?'))) return false">Delete</a>
+                            </td>
                         </tr>
                     </c:forEach>
                 </table>

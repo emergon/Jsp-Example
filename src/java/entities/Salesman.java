@@ -20,6 +20,12 @@ public class Salesman {
     public Salesman(){
         
     }
+
+    public Salesman(String sname, String scity, double scomm) {
+        this.sname = sname;
+        this.scity = scity;
+        this.scomm = scomm;
+    }
     
     public Salesman(int scode, String sname, String scity, double scomm) {
         this.scode = scode;
